@@ -72,6 +72,10 @@ namespace lab2_SGBD
             foreach(string column in childColumnNames)
             {
                 TextBox txtBox = new TextBox();
+                Label label = new Label();
+                label.Width = 150;
+                label.Text = column;
+                textBoxPanel.Controls.Add(label);
                 textBoxPanel.Controls.Add(txtBox);
                 textBoxDictionary.Add(column, txtBox);
             }
